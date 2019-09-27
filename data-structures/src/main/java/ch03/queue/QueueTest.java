@@ -1,5 +1,7 @@
 package ch03.queue;
 
+import ch04.link.LinkedListQueue;
+
 import java.util.Random;
 
 /**
@@ -32,5 +34,9 @@ public class QueueTest {
         Queue<Integer> loopQueue = new LoopQueue<>();
         double time2 = testQueue(loopQueue, optCount);
         System.out.println("LoopQueue time:" + time2);
+
+        Queue<Integer> linkedListQueue = new LinkedListQueue<>();
+        double time3 = testQueue(linkedListQueue, optCount);
+        System.out.println("linkedListQueue time:" + time3);
     }
 }
