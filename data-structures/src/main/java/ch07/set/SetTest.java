@@ -17,7 +17,7 @@ public class SetTest {
 
     public static void main(String[] args) {
         List<String> words = new ArrayList<>();
-        FileOperation.readFile("spring-core.txt", words);
+        FileOperation.readFile("TheUnadjustedGirl.txt", words);
 
         Set<String> bstSet = new BSTSet<>();
         double time1 = testSet(bstSet, words);

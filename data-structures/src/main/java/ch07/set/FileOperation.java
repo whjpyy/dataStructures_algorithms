@@ -20,6 +20,7 @@ public class FileOperation {
             scanner.useLocale(Locale.ENGLISH);
         } catch (Exception e) {
             e.printStackTrace();
+            return false;
         }
         while (scanner.hasNextLine()){
             words.addAll(Arrays.asList(scanner.nextLine().split(" ")));
